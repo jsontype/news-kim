@@ -1,25 +1,43 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@tailwindcss/postcss": "4.0.0-alpha.13",
-    "@types/node": "20.11.17",
-    "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.19",
-    "@vercel/analytics": "^1.1.3",
-    "@vercel/speed-insights": "^1.0.9",
-    "geist": "1.2.2",
-    "next": "canary",
-    "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.35",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sugar-high": "^0.6.0",
-    "tailwindcss": "4.0.0-alpha.13",
-    "typescript": "5.3.3"
-  }
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "husky",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"format": "prettier --cache --check --ignore-path .gitignore .",
+		"format:fix": "prettier --write --ignore-path .gitignore .",
+		"eslint": "eslint --cache ./app",
+		"eslint:fix": "eslint --fix ./app",
+		"lint:check": "pnpm format && pnpm eslint",
+		"lint:fix": "pnpm format:fix && pnpm eslint:fix"
+	},
+	"dependencies": {
+		"@tailwindcss/postcss": "4.0.0-alpha.13",
+		"@types/node": "20.11.17",
+		"@types/react": "18.2.55",
+		"@types/react-dom": "18.2.19",
+		"@vercel/analytics": "^1.1.3",
+		"@vercel/speed-insights": "^1.0.9",
+		"geist": "1.3.1",
+		"next": "^14.2.20",
+		"next-mdx-remote": "^4.4.1",
+		"postcss": "^8.4.35",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"sugar-high": "^0.6.0",
+		"tailwindcss": "4.0.0-alpha.13",
+		"typescript": "5.3.3"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^8.18.0",
+		"@typescript-eslint/parser": "^8.18.0",
+		"eslint": "^9.16.0",
+		"eslint-config-next": "^15.1.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-react": "^7.37.2",
+		"husky": "^9.1.7",
+		"prettier": "^3.4.2"
+	}
 }
