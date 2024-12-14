@@ -1,6 +1,6 @@
-import react from 'eslint-plugin-react';
-import typescript from '@typescript-eslint/eslint-plugin';
-import parser from '@typescript-eslint/parser';
+import react from 'eslint-plugin-react'
+import typescript from '@typescript-eslint/eslint-plugin'
+import parser from '@typescript-eslint/parser'
 
 export default [
 	{
@@ -25,4 +25,4 @@ export default [
 			'@typescript-eslint/no-unused-vars': 'warn', // 사용하지 않는 변수는 경고만
 		},
 	},
-];
+]

@@ -1,5 +1,5 @@
 export default {
-	semi: true, // 세미콜론 자동 넣기
+	semi: false, // 세미콜론
 	singleQuote: true, // 따옴표 1개 2개
 	useTabs: true, // Tab으로 넣기
 	tabWidth: 2, // 탭의 사이즈
@@ -25,4 +25,4 @@ export default {
 			},
 		},
 	],
-};
+}
