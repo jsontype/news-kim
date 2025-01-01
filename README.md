@@ -1,16 +1,36 @@
 # Vercel Prd
 https://news-kim-jsontypes-projects.vercel.app/
 
+## Tools
+
+| Tool        | Version |
+| ----------- | ------- |
+| typescript | 5.3.3 |
+| react | 18.2.0 |
+| react-dom | 18.2.0 |
+| react-router | 7.1.1 |
+| next | 14.2.20 |
+| sass | 1.83.0 |
+| tailwindcss | 4.0.0-alpha.13 |
+| geist | 1.3.1 |
+| postcss | 8.4.35 |
+| sugar-high | 0.6.0 |
+
 # package Manager
 
-#### use pnpm
-"prepare": "husky",<br/>
-"dev": "next dev",<br/>
-"build": "next build",<br/>
-"start": "next start",<br/>
-"format": "prettier --cache --check --ignore-path .gitignore .",<br/>
-"format:fix": "prettier --write --ignore-path .gitignore .",<br/>
-"eslint": "eslint --cache ./app",<br/>
-"eslint:fix": "eslint --fix ./app",<br/>
-"lint:check": "pnpm format && pnpm eslint",<br/>
-"lint:fix": "pnpm format:fix && pnpm eslint:fix"<br/>
+### use pnpm
+
+ex) pnpm dev
+
+| Command | Description |
+| ----------- | ------- |
+| prepare | husky |
+| dev | next dev |
+| build | next build |
+| start | next start |
+| format | prettier --cache --check --ignore-path .gitignore . |
+| format:fix | prettier --write --ignore-path .gitignore . |
+| eslint | eslint --cache ./app |
+| eslint:fix | eslint --fix ./app |
+| lint:check | pnpm format && pnpm eslint |
+| lint:fix | pnpm format:fix && pnpm eslint:fix |
