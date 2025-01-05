@@ -1,0 +1,25 @@
+@import '../../styles/resources.scss';
+
+.navBar {
+  height: $size-lg;
+  padding-top: $space-xs;
+  font-size: medium;
+
+  ul {
+    list-style-type: none;
+    padding: $space-none;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: $space-sm;
+  }
+}
+
+.navItems {
+  color: $font-white;
+
+  &:hover {
+    color: $font-red;
+  }
+}

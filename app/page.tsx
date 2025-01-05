@@ -1,21 +1,18 @@
-import { BlogPosts } from 'app/components/posts'
+'use client'
+
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import Todo from './pages/Todo'
+import Movies from './pages/Movies'
+import News from './pages/News'
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/movies" element={<Movies />} />
+      <Route path="/todo" element={<Todo />} />
+    </Routes>
   )
 }
