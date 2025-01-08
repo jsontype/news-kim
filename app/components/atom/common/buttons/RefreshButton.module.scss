@@ -1,0 +1,16 @@
+@import '../../../../styles/resources.scss';
+
+.refeshButtonBox {
+  padding: 10px 0;
+}
+
+.refreshButton {
+  color: $font-white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: $color-cerulean;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
