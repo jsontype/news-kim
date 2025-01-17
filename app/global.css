@@ -148,3 +148,11 @@ table {
 .title {
   text-wrap: balance;
 }
+
+.todoItemsContainer {
+  @apply py-2 border-t-2 border-b-2 border-gray-400 gap-y-2 flex justify-between items-center px-1;
+}
+
+.testBorder {
+  @apply border-red-500 border;
+}

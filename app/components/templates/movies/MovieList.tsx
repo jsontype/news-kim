@@ -15,9 +15,6 @@ export default function MovieList() {
       .catch((error) => console.log('get api error', error))
   }, [])
 
-  // Test: api data log
-  // console.log('movie', movieList)
-
   return (
     <div className={styles.movieList}>
       {movieList !== undefined ? (
