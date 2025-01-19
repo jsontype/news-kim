@@ -4,18 +4,19 @@ https://news-kim-jsontypes-projects.vercel.app/
 
 ## Tools
 
-| Tool         | Version        |
-| ------------ | -------------- |
-| typescript   | 5.3.3          |
-| react        | 18.2.0         |
-| react-dom    | 18.2.0         |
-| react-router | 7.1.1          |
-| next         | 14.2.20        |
-| sass         | 1.83.0         |
-| tailwindcss  | 4.0.0-alpha.13 |
-| geist        | 1.3.1          |
-| postcss      | 8.4.35         |
-| sugar-high   | 0.6.0          |
+| Tool              | Version        |
+| ----------------- | -------------- |
+| typescript        | 5.3.3          |
+| react             | 18.2.0         |
+| react-dom         | 18.2.0         |
+| react-router      | 7.1.1          |
+| next              | 14.2.20        |
+| sass              | 1.83.0         |
+| tailwindcss       | 4.0.0-alpha.13 |
+| geist             | 1.3.1          |
+| postcss           | 8.4.35         |
+| temporal-polyfill | 0.6.0          |
+| sugar-high        | 0.6.0          |
 
 # package Manager
 

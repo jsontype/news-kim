@@ -53,6 +53,9 @@ dependencies:
   sugar-high:
     specifier: ^0.6.0
     version: 0.6.1
+  temporal-polyfill:
+    specifier: ^0.2.5
+    version: 0.2.5
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -4994,6 +4997,22 @@ packages:
       }
     engines: { node: '>=6' }
     dev: true
+
+  /temporal-polyfill@0.2.5:
+    resolution:
+      {
+        integrity: sha512-ye47xp8Cb0nDguAhrrDS1JT1SzwEV9e26sSsrWzVu+yPZ7LzceEcH0i2gci9jWfOfSCCgM3Qv5nOYShVUUFUXA==,
+      }
+    dependencies:
+      temporal-spec: 0.2.4
+    dev: false
+
+  /temporal-spec@0.2.4:
+    resolution:
+      {
+        integrity: sha512-lDMFv4nKQrSjlkHKAlHVqKrBG4DyFfa9F74cmBZ3Iy3ed8yvWnlWSIdi4IKfSqwmazAohBNwiN64qGx4y5Q3IQ==,
+      }
+    dev: false
 
   /to-regex-range@5.0.1:
     resolution:

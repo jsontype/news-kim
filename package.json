@@ -30,6 +30,7 @@
     "recoil": "^0.7.7",
     "sass": "^1.83.0",
     "sugar-high": "^0.6.0",
+    "temporal-polyfill": "^0.2.5",
     "typescript": "5.3.3"
   },
   "devDependencies": {
