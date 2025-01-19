@@ -20,24 +20,30 @@
     "@types/react-dom": "18.2.19",
     "@vercel/analytics": "^1.1.3",
     "@vercel/speed-insights": "^1.0.9",
+    "clsx": "^2.1.1",
     "geist": "1.3.1",
     "next": "^14.2.20",
     "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router": "^7.1.1",
+    "recoil": "^0.7.7",
+    "sass": "^1.83.0",
     "sugar-high": "^0.6.0",
-    "tailwindcss": "4.0.0-alpha.13",
+    "temporal-polyfill": "^0.2.5",
     "typescript": "5.3.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.2",
     "husky": "^9.1.7",
-    "prettier": "^3.4.2"
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "tailwindcss": "4.0.0-alpha.13"
   }
 }

@@ -1,0 +1,9 @@
+@import '../../../styles/resources.scss';
+
+.descriptionBox {
+  border-top: 3px solid $color-red-light;
+  border-bottom: 3px solid $color-red-light;
+  margin-top: $space-sm;
+  padding: $space-sm;
+  min-height: 50px;
+}

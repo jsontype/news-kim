@@ -1,0 +1,17 @@
+@import '../../../styles/resources.scss';
+
+.movieList {
+}
+
+.movieCard {
+  background-color: $color-black-light;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: $space-md 0;
+}
+
+.movieDetail {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}

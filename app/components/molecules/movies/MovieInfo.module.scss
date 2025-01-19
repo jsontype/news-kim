@@ -1,0 +1,39 @@
+@import '../../../styles/resources.scss';
+
+.movieInfo {
+  text-align: end;
+}
+
+.movieInfoItem {
+  margin-bottom: $space-sm;
+}
+
+.title {
+  font-size: $font-28;
+  font-weight: $font-bold;
+}
+
+.year {
+  margin-bottom: $space-sm;
+}
+
+.genreBox {
+  gap: 10px;
+}
+
+.genre {
+  margin-left: $space-xs;
+  padding: $space-xs;
+  border: 2px solid $color-orange;
+  border-radius: 5px;
+  background-color: $color-orange-light;
+}
+
+.movieLink {
+  font-weight: $font-bold;
+  text-decoration: underline;
+  &:hover {
+    color: $font-blue-light;
+    font-weight: $font-bolder;
+  }
+}
