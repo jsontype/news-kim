@@ -2,20 +2,24 @@ import { todoListApi } from 'app/api/TodoApi'
 import AddTodoItem from 'app/components/molecules/todoList/AddTodoItem'
 import TodoItems from 'app/components/molecules/todoList/TodoItems'
 import { numberOfTodoListAtom } from 'app/store/numberOfTodoListAtom'
+import { selectTodoStatusAtom } from 'app/store/selectTodoStatusAtom'
 import type { TodoList } from 'app/types/TodoList'
 import { useEffect, useState } from 'react'
-import { useSetRecoilState } from 'recoil'
+import { useRecoilValue, useSetRecoilState } from 'recoil'
 
 export default function TodoList() {
   const [todos, setTodos] = useState<TodoList[]>([])
   const [newId, setNewId] = useState(0)
+  const [renderTodos, setRenderTodos] = useState<TodoList[]>([])
   const setNumberOfTodoList = useSetRecoilState(numberOfTodoListAtom)
+  const { selectComplete } = useRecoilValue(selectTodoStatusAtom)
 
   useEffect(() => {
     todoListApi()
       .then((data) => {
         const todoData = data.filter((item) => item.userId === 5)
         setTodos(todoData)
+        setRenderTodos(todoData)
 
         const lastId = todoData[todoData.length - 1].id
         setNewId(lastId + 1)
@@ -34,6 +38,16 @@ export default function TodoList() {
     )
     setNumberOfTodoList({ complete, notComplete })
   }, [todos])
+
+  // complete싱태에 따른 것만 표시
+  useEffect(() => {
+    const filteredTodos = todos.filter((todo) => {
+      if (selectComplete === 'complete') return todo.completed === true
+      else if (selectComplete === 'notComplete') return todo.completed === false
+      else return true
+    })
+    setRenderTodos(filteredTodos)
+  }, [selectComplete, todos])
 
   // todo추가
   const onAddItem = (title: string) => {
@@ -69,9 +83,9 @@ export default function TodoList() {
 
   return (
     <>
-      {todos.length !== 0 ? (
+      {renderTodos.length !== 0 ? (
         <div>
-          {todos.map((todo, index) => {
+          {renderTodos.map((todo, index) => {
             return (
               <TodoItems
                 key={`${todo.id}+${index}`}
