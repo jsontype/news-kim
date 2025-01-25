@@ -4,3 +4,5 @@ export interface TodoList {
   title: string
   completed: boolean
 }
+
+export type SELECT_STATUS = 'complete' | 'notComplete' | 'none'
